@@ -47,5 +47,5 @@ genShortcutLinks() ;
 var els = document.getElementsByTagName("*");
 for(var i = 0, l = els.length; i < l; i++) {
   var el = els[i];
-  el.innerHTML = el.innerHTML.replace(re, 'javascript:void(0)' + 'javascript:void(0) ; genShortcutLinks();' );
+  el.innerHTML = el.innerHTML.replace('javascript:void(0)', 'javascript:void(0) ; genShortcutLinks();' );
 }
