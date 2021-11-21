@@ -6,7 +6,7 @@
 // ==/UserScript==
 'use strict';
 
-var re = RegExp('\\b(' + [
+var regex = RegExp('\\b(' + [
 'dropapk\\.to/',
 '(rapidgator\\.net|rg\\.to)/file',
 'mega\\.co\\.nz/#!',
@@ -24,20 +24,19 @@ var re = RegExp('\\b(' + [
 'zippyshare\\.com/'
 ].join('|') + ')', 'i');
 
-var input=document.createElement("input");
-input.type="button";
-input.value="GreaseMonkey Button";
-input.onclick = showAlert;
-document.body.appendChild(input); 
- 
-function showAlert()
-{
-    alert("Hello World");
-}
+var prepend = "shortcuts://run-shortcut?name=RealDebridDynamic&input=" ;
 
-var els = document.getElementsByTagName("*");
-for(var i = 0, l = els.length; i < l; i++) {
-  var el = els[i];
-  el.innerHTML = el.innerHTML.replace(/rapid/gi, 'cranie');
-}
+var links,thisLink;
+links = document.evaluate("//a[@href]",
+    document,
+    null,
+    XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+    null);
 
+for (var i=0;i<links.snapshotLength;i++) {
+    var thisLink = links.snapshotItem(i);
+
+  thisLink.href = thisLink.href.replace(regex,
+                                      prepend + '$1');
+
+}
