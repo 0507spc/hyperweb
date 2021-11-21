@@ -34,6 +34,7 @@ document.body.appendChild(input);
 function showAlert()
 {
     alert("Hello World");
+}
 
 var els = document.getElementsByTagName("*");
 for(var i = 0, l = els.length; i < l; i++) {
