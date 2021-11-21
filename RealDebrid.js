@@ -3,7 +3,7 @@
 // @author         Me
 // @include        http://*
 // @connect-src    real-debrid.com
-// @namespace      https://api.real-debrid.com/rest/1.0/hosts/regex
+//       https://api.real-debrid.com/rest/1.0/hosts/regex
 // ==/UserScript==
 'use strict';
 
