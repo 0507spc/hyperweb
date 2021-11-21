@@ -45,6 +45,6 @@ function genShortcutLinks() {
 genShortcutLinks() ;
 
 
-document.getElementById("magnetLink").href="javascript:void(0) ; genShortcutLinks();"; 
+document.getElementById("magnetLink").href="javascript:void(0) ; javascript:void(genShortcutLinks());"; 
 
 //var els = document.getElementByID("magnetLink") ;
