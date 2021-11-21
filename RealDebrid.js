@@ -8,7 +8,7 @@
 
 var regex = RegExp('\\b(' + [
 'dropapk\\.to/',
-'(http://|https://)(rapidgator\\.net|rg\\.to)/file',
+'https...(rapidgator\\.net|rg\\.to)/file',
 'mega\\.co\\.nz/#!',
 'userscloud\\.com/[a-z0-9]+',
 'nitroflare\\.com/view',
@@ -24,7 +24,7 @@ var regex = RegExp('\\b(' + [
 'zippyshare\\.com/'
 ].join('|') + ')', 'i');
 
-var prepend = "shortcuts://run-shortcut?name=RealDebridDynamic&input=" ;
+var prepend = "shortcuts\://run-shortcut?name=RealDebridDynamic&input=" ;
 
 var links,thisLink;
 links = document.evaluate("//a[@href]",
