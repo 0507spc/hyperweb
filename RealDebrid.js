@@ -44,8 +44,19 @@ function genShortcutLinks() {
 
 genShortcutLinks() ;
 
-var els = document.getElementsByTagName("*");
-for(var i = 0, l = els.length; i < l; i++) {
-  var el = els[i];
-  el.innerHTML = el.innerHTML.replace('javascript:void(0)', 'javascript:void(0) ; genShortcutLinks();' );
+
+var links,thisLink;
+links = document.evaluate("//a[@href]",
+    document,
+    null,
+    XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+    null);
+for (var i=0;i<links.snapshotLength;i++) {
+    var thisLink = links.snapshotItem(i);
+
+    thisLink.href = thisLink.href.replace('javascript:void(0)',
+                                          'javascript:void(0) ; genShortcutLinks();' );
 }
+
+
+//var els = document.getElementByID("magnetLink") ;
