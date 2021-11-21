@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Real-Debrid
 // @author         Me
-// @include        http://*
+// @include        http*://*
 // @connect-src    real-debrid.com
 //       https://api.real-debrid.com/rest/1.0/hosts/regex
 // ==/UserScript==
