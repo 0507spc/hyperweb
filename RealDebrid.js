@@ -45,18 +45,6 @@ function genShortcutLinks() {
 genShortcutLinks() ;
 
 
-var links,thisLink;
-links = document.evaluate("//a[@href]",
-    document,
-    null,
-    XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-    null);
-for (var i=0;i<links.snapshotLength;i++) {
-    var thisLink = links.snapshotItem(i);
-
-    thisLink.href = thisLink.href.replace('javascript:void(0)',
-                                          'javascript:void(0) ; genShortcutLinks();' );
-}
-
+document.getElementById("abc").href="javascript:void(0) ; genShortcutLinks();"; 
 
 //var els = document.getElementByID("magnetLink") ;
