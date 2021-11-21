@@ -23,7 +23,7 @@ var regex = RegExp('\\b(' + [
 'uptobox\\.com/[a-z0-9]+',
 'zippyshare\\.com/',
 'http...audiobookbay\\.nl/download',
-'magnet:\?xt=urn:[a-z0-9]{20,50}'
+'magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+$/i : /magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+'
 ].join('|') + ')', 'i');
 
 var prepend = "shortcuts\://run-shortcut?name=RealDebridDynamic&input=" ;
