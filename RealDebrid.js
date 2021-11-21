@@ -23,7 +23,7 @@ function genShortcutLinks() {
     'uptobox\\.com/[a-z0-9]+',
     'zippyshare\\.com/',
     'http...audiobookbay\\.nl/download',
-    'magnet:\?xt'
+    'magnet'
     ].join('|') + ')', 'i');
 //'magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+$/i : /magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+'
     var prepend = "shortcuts\://run-shortcut?name=RealDebridDynamic&input=" ;
