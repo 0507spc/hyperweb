@@ -8,7 +8,7 @@
 
 var regex = RegExp('\\b(' + [
 'dropapk\\.to/',
-'https://(rapidgator\\.net|rg\\.to)/file',
+'(http://|https://)(rapidgator\\.net|rg\\.to)/file',
 'mega\\.co\\.nz/#!',
 'userscloud\\.com/[a-z0-9]+',
 'nitroflare\\.com/view',
