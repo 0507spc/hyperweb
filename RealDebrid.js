@@ -22,7 +22,8 @@ var regex = RegExp('\\b(' + [
 'uploadrocket.net/[a-z0-9]+',
 'uptobox\\.com/[a-z0-9]+',
 'zippyshare\\.com/',
-'http...audiobookbay\\.nl/download'
+'http...audiobookbay\\.nl/download',
+'magnet\\:\\?'
 ].join('|') + ')', 'i');
 
 var prepend = "shortcuts\://run-shortcut?name=RealDebridDynamic&input=" ;
