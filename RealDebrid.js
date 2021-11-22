@@ -6,15 +6,16 @@
 // ==/UserScript==
 'use strict';
 
-function delay(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
+//function delay(time) {
+//  return new Promise(resolve => setTimeout(resolve, time));
+//}
 
 function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
+    await new Promise(r => setTimeout(r, 2000));
     genShortcutLinks() ;
-    delay(5000).then(() => console.log('I waited'));
+  //  delay(5000).then(() => console.log('I waited'));
 }
 
 
