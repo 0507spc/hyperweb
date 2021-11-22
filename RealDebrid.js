@@ -13,14 +13,11 @@ function delay(time) {
 function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
-    delay(3000).then(() => console.log('I waited'));
+    delay(5000).then(() => console.log('I waited'));
 }
 
 
-function genShortcutLinks() {
-
-    clickMe() ;
-    
+function genShortcutLinks() {    
     var regex = RegExp('\\b(' + [
     'dropapk\\.to/',
     'https...(rapidgator\\.net|rg\\.to)/file',
@@ -56,6 +53,8 @@ function genShortcutLinks() {
     }
 
 }
+
+clickMe() ;
 
 genShortcutLinks() ;
 
