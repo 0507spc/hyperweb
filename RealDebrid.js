@@ -11,11 +11,11 @@ function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
     await new Promise(r => setTimeout(r, 5000));
+    genShortcutLinks() ;
 }
 
 
 function genShortcutLinks() {    
-    clickMe() ;
     var regex = RegExp('\\b(' + [
     'dropapk\\.to/',
     'https...(rapidgator\\.net|rg\\.to)/file',
@@ -54,5 +54,7 @@ function genShortcutLinks() {
 
 //clickMe() ;
 //    await new Promise(r => setTimeout(r, 5000));
+clickMe() ;
+
 genShortcutLinks() ;
 
