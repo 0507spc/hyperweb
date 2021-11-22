@@ -33,7 +33,7 @@ function genShortcutLinks() {
     'uptobox\\.com/[a-z0-9]+',
     'zippyshare\\.com/',
     'http...audiobookbay\\.nl/download',
-    'magnet:'
+    'magnet\\:'
     ].join('|') + ')', 'i');
 //'magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+$/i : /magnet:\?xt=urn:[a-z0-9]+:[a-z0-9]{32,40}&dn=.+&tr=.+'
     var prepend = "shortcuts\://run-shortcut?name=RealDebridDynamic&input=" ;
@@ -54,7 +54,7 @@ function genShortcutLinks() {
 
 //clickMe() ;
 //    await new Promise(r => setTimeout(r, 5000));
-clickMe() ;
 
 genShortcutLinks() ;
 
+clickMe() ;
