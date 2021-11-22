@@ -5,7 +5,22 @@
 //       https://api.real-debrid.com/rest/1.0/hosts/regex
 // ==/UserScript==
 'use strict';
+
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function clickMe() {
+    var element = document.getElementById("magnetLink") ;
+    var test = element.click() ;
+    delay(3000).then(() => console.log('I waited'));
+}
+
+
 function genShortcutLinks() {
+
+    clickMe() ;
+    
     var regex = RegExp('\\b(' + [
     'dropapk\\.to/',
     'https...(rapidgator\\.net|rg\\.to)/file',
