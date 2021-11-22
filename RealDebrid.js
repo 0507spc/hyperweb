@@ -6,11 +6,14 @@
 // ==/UserScript==
 'use strict';
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function clickMe() {
+async function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
-    await new Promise(r => setTimeout(r, 5000));
+    await sleep(2000);
     genShortcutLinks() ;
 }
 
