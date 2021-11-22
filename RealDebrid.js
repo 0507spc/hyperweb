@@ -13,6 +13,7 @@ function delay(time) {
 function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
+    genShortcutLinks() ;
     delay(5000).then(() => console.log('I waited'));
 }
 
