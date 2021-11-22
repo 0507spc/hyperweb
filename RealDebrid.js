@@ -11,7 +11,6 @@ function clickMe() {
     var element = document.getElementById("magnetLink") ;
     var test = element.click() ;
     await new Promise(r => setTimeout(r, 5000));
-    genShortcutLinks() ;
 }
 
 
