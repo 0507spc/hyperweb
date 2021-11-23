@@ -22,7 +22,7 @@ function genShortcutLinks() {
     var regex = RegExp('\\b(' + [
     'dropapk\\.to/',
     'https...(rapidgator\\.net|rg\\.to)/file',
-    'https...drop\\.download\\.com',
+    'https...drop\\.download',
     'https...ddownload\\.com',
     'mega\\.co\\.nz/#!',
     'userscloud\\.com/[a-z0-9]+',
